@@ -1,0 +1,64 @@
+{
+  "name": "midway-vite-view",
+  "version": "2.1.0",
+  "description": "midway vite ssr view vue  react, midway 的 vite 服务端渲染和客户端渲染组件，支持vue3 react,服务端渲染失败后会自动执行客户端渲染。 Midway's Vite server rendering and client rendering components support vue3 React， Client rendering is automatically performed when server rendering fails。",
+  "main": "dist/index.js",
+  "typings": "index.d.ts",
+  "bin": {
+    "vite-view": "bin/vite-view.js"
+  },
+  "scripts": {
+    "build": "midway-bin build -c",
+    "test": "midway-bin test --ts",
+    "cov": "midway-bin cov --ts",
+    "lint": "mwts check",
+    "lint:fix": "mwts fix",
+    "vueBuild": "vite bind"
+  },
+  "keywords": [
+    "midway view",
+    "vite",
+    "ssr",
+    "vue",
+    "react",
+    "midway ssr"
+  ],
+  "bugs": {
+    "url": "https://github.com/yuntian001/midway-vite-view/issues"
+  },
+  "author": "yuntian001",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuntian001/midway-vite-view.git"
+  },
+  "files": [
+    "dist/*",
+    "index.d.ts",
+    "README.md"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@midwayjs/koa": "^3.0.0",
+    "@midwayjs/static-file": "^3.0.9",
+    "@midwayjs/view": "^3.0.7",
+    "extend2": "^1.0.1",
+    "koa2-connect": "^1.0.2"
+  },
+  "devDependencies": {
+    "@midwayjs/cli": "^1.3.5",
+    "@midwayjs/core": "^3.3.5",
+    "@midwayjs/decorator": "^3.0.0",
+    "@midwayjs/mock": "^3.0.0",
+    "@types/jest": "^27.4.0",
+    "@types/koa": "^2.13.5",
+    "@types/node": "^16.11.22",
+    "compression": "^1.7.4",
+    "jest": "^27.5.1",
+    "mwts": "^1.0.5",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.0.0"
+  },
+  "peerDependencies": {
+    "vite": ">=2.0.0"
+  }
+}
